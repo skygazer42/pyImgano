@@ -67,7 +67,9 @@ _auto_import(
         "fastflow",
         "favae",  # NEW: Feature Adaptive VAE (2023) ⭐⭐ 🆕
         "gcad",  # NEW: Graph Convolutional AD (2023) ⭐⭐ 🆕
+        "glad",  # NEW: Global-Local Adaptive Diffusion (ECCV 2024) ⭐⭐⭐ 🔥
         "imdd",
+        "inctrl",  # NEW: In-context Residual Learning (CVPR 2024) ⭐⭐⭐ 🔥
         "intra",  # NEW: Industrial Transformer (ICCV 2023) ⭐⭐ 🆕
         "memseg",  # NEW: Memory-guided segmentation ⭐⭐ 🆕
         "mo_gaal",
@@ -75,8 +77,10 @@ _auto_import(
         "padim",
         "panda",  # NEW: Prototypical Anomaly Network (2023) ⭐⭐ 🆕
         "patchcore",  # SOTA patch-level detection (CVPR 2022)
+        "promptad",  # NEW: Prompt-based Few-Shot (CVPR 2024) ⭐⭐⭐ 🔥
         "pni",  # NEW: Pyramidal normality indexing (CVPR 2022) ⭐⭐ 🆕
         "rdplusplus",  # NEW: Reverse Distillation++ (Enhanced) ⭐⭐ 🆕
+        "realnet",  # NEW: Realistic Synthetic Anomaly (CVPR 2024) ⭐⭐⭐ 🔥
         "regad",  # NEW: Registration-based AD (2023) ⭐⭐ 🆕
         "reverse_distillation",
         "riad",  # NEW: Reconstruction from adjacent decomposition ⭐⭐ 🆕
