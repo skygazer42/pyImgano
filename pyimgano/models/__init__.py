@@ -24,33 +24,49 @@ def _auto_import(modules: Iterable[str]) -> None:
 
 _auto_import(
     [
+        # Classical ML algorithms
         "abod",
+        "cblof",
+        "cof",  # Connectivity-based outlier factor
+        "copod",  # High-performance, parameter-free (ICDM 2020)
+        "dbscan",
+        "ecod",  # State-of-the-art, parameter-free (TKDE 2022)
+        "feature_bagging",  # Ensemble method
+        "hbos",
+        "inne",  # Isolation using nearest neighbors
+        "Isolationforest",
+        "knn",  # K-Nearest Neighbors (classic)
+        "kpca",
+        "k_means",
+        "loci",
+        "loda",
+        "lof",
+        "lscp",
+        "mcd",  # Minimum covariance determinant
+        "ocsvm",
+        "pca",  # Principal Component Analysis (classic)
+        "suod",
+        "xgbod",
+        # Deep learning algorithms
         "ae",
         "ae1svm",
         "alad",
-        "cblof",
-        "dbscan",
+        "cflow",  # NEW: Conditional normalizing flows (WACV 2022) ⭐
         "deep_svdd",
+        "dfm",  # NEW: Fast discriminative feature modeling ⭐
+        "draem",  # NEW: Discriminative reconstruction (ICCV 2021) ⭐
         "efficientad",
         "fastflow",
-        "Isolationforest",
-        "reverse_distillation",
-        "xgbod",
-        "mo_gaal",
-        "suod",
         "imdd",
-        "hbos",
-        "loci",
-        "lscp",
-        "kpca",
-        "k_means",
-        "lof",
-        "loda",
-        "ocsvm",
+        "mo_gaal",
         "one_svm_cnn",
         "padim",
+        "patchcore",  # SOTA patch-level detection (CVPR 2022)
+        "reverse_distillation",
+        "simplenet",  # Ultra-fast SOTA (CVPR 2023)
         "ssim",
         "ssim_struct",
+        "stfpm",  # Student-Teacher matching (BMVC 2021)
         "vae",
     ]
 )

@@ -8,6 +8,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Image Preprocessing Module** (`pyimgano.preprocessing`) ⭐ NEW!
+  - **ImageEnhancer** - High-level interface for basic operations (25 operations)
+  - **AdvancedImageEnhancer** - Extended with 25+ advanced operations (50+ total)
+  - **PreprocessingPipeline** - Sequential operation composition with method chaining
+  - **PreprocessingMixin** - Easy integration with detectors via mixin pattern
+
+  **Basic Operations (25)**:
+  - **Edge Detection** (7 methods): Canny, Sobel, Sobel X/Y, Laplacian, Scharr, Prewitt
+  - **Morphological Operations** (7 types): Erosion, Dilation, Opening, Closing, Gradient, TopHat, BlackHat
+  - **Filters** (4 types): Gaussian, Bilateral, Median, Box
+  - **Normalization** (4 methods): MinMax, Z-Score, L2, Robust (IQR-based)
+  - **Enhancement** (3): Sharpen, Unsharp Mask, CLAHE
+
+  **Advanced Operations (25+)**:
+  - **Frequency Domain** (6): FFT, IFFT, Lowpass, Highpass, Bandpass, Bandstop filters
+  - **Texture Analysis** (3): Gabor filters, Local Binary Pattern (LBP), GLCM texture features
+  - **Color Space Transformations** (8): RGB, HSV, LAB, YCrCb, HLS, LUV + conversions
+  - **Advanced Enhancement** (4): Gamma correction, Contrast stretching, Single/Multi-Scale Retinex
+  - **Advanced Denoising** (2): Non-local means denoising, Anisotropic diffusion
+  - **Feature Extraction** (4): HOG features, Harris corners, Shi-Tomasi, FAST detector
+  - **Advanced Morphology** (4): Skeletonization, Thinning, Convex hull, Distance transform
+  - **Segmentation** (6): Otsu, Adaptive (mean/Gaussian), Triangle, Yen, Watershed
+  - **Image Pyramids** (2): Gaussian pyramid, Laplacian pyramid
+
+  **Augmentation Operations (30+)** ⭐ NEW!:
+  - **Geometric Augmentations** (7): Rotation, Flipping, Scaling, Translation, Shearing, Perspective, Affine
+  - **Color Augmentations** (5): Brightness, Contrast, Saturation, Hue adjustment, Color jitter
+  - **Noise Addition** (4): Gaussian noise, Salt-and-pepper noise, Poisson noise, Speckle noise
+  - **Blur Effects** (4): Motion blur, Defocus blur, Glass blur, Zoom blur
+  - **Weather Effects** (5): Rain, Fog, Snow, Shadow, Sunflare effects
+  - **Occlusion & Cutout** (4): Random cutout, Grid mask, Mixup, CutMix
+  - **Distortion** (2): Elastic transform, Grid distortion
+  - **Pipeline System** (8): Compose, OneOf, RandomApply, + 5 preset pipelines (light, medium, heavy, weather, anomaly)
+
+  - **Total operations: 80+** (25 basic + 25 advanced + 30 augmentation)
+  - Comprehensive preprocessing documentation (docs/PREPROCESSING.md)
+  - Complete test suite (tests/test_preprocessing.py - 500+ lines)
+  - Usage examples (examples/preprocessing_example.py, advanced_preprocessing_example.py, augmentation_example.py)
+- **3 New High-Performance Deep Learning Algorithms** ⚡:
+  - **DRAEM** (ICCV 2021) - Discriminatively trained reconstruction with synthetic anomalies
+  - **CFlow-AD** (WACV 2022) - Real-time conditional normalizing flows
+  - **DFM** - Fast discriminative feature modeling (training-free)
+- Total algorithms now: **37+** (19 classical ML + 18 deep learning)
 - Enterprise-grade package configuration
 - Modern `pyproject.toml` build system configuration
 - Comprehensive GitHub Actions CI/CD workflows
@@ -20,11 +63,67 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MANIFEST.in for proper package distribution
 - .editorconfig for consistent coding style
 - tox configuration for multi-version testing
+- **34+ total algorithms** (19 classical ML + 15 deep learning)
+- New PyOD classical ML integrations (19 total):
+  - **ECOD** (Empirical CDF-based, TKDE 2022) - State-of-the-art, parameter-free
+  - **COPOD** (Copula-based, ICDM 2020) - High-performance, parameter-free
+  - **KNN** (K-Nearest Neighbors) - Classic, simple and effective
+  - **PCA** (Principal Component Analysis) - Classic dimensionality reduction
+  - **COF** (Connectivity-Based Outlier Factor, PAKDD 2002) - Density-based detection
+  - **MCD** (Minimum Covariance Determinant, 1999) - Robust statistical method
+  - **Feature Bagging** (KDD 2005) - Ensemble method for stability
+  - **INNE** (Isolation Nearest Neighbors, ICDM 2014) - Fast isolation-based
+- New state-of-the-art deep learning algorithms (15 total):
+  - **SimpleNet** (CVPR 2023) ⭐ - Ultra-fast SOTA, 10x faster training, ~99% AUROC
+  - **PatchCore** (CVPR 2022) ⭐ - Best accuracy (99.6% AUROC), memory-based, pixel localization
+  - **STFPM** (BMVC 2021) ⭐ - Student-Teacher matching, multi-scale features, ~97% AUROC
+- Enhanced error handling and logging for all detectors
+- Improved PyOD version compatibility (>=1.1.0, <3.0.0)
+- Comprehensive algorithm selection guide
+- **Deep Learning Models Guide** - Detailed documentation for SOTA DL algorithms
+- Complete test suite with comprehensive coverage:
+  - Classical ML tests (test_pyod_models.py)
+  - Deep learning tests (test_dl_models.py) - 400+ lines covering all DL models
+- Enhanced documentation structure with dedicated DL guide
+- **Comprehensive Evaluation Module** (`pyimgano.evaluation`) ⭐
+  - `compute_auroc()` - ROC-AUC computation
+  - `compute_average_precision()` - Average Precision for imbalanced datasets
+  - `compute_classification_metrics()` - Precision, Recall, F1, Specificity, Accuracy
+  - `find_optimal_threshold()` - Automatic threshold optimization (F1, Youden, etc.)
+  - `evaluate_detector()` - One-stop comprehensive evaluation
+  - `compute_pro_score()` - Pixel-level PRO score for localization
+  - `print_evaluation_summary()` - Formatted result display
+- **Benchmarking Tools** (`pyimgano.benchmark`) ⭐
+  - `AlgorithmBenchmark` class - Systematic multi-algorithm comparison
+  - `quick_benchmark()` - Fast benchmarking with defaults
+  - Automatic timing measurements (training and inference)
+  - Performance ranking by any metric
+  - JSON export for results
+- **Visualization Module** (`pyimgano.visualization`) ⭐
+  - `plot_anomaly_map()` - Heatmap overlay on images
+  - `plot_roc_curve()` - ROC curve with AUC
+  - `plot_precision_recall_curve()` - PR curve with AP
+  - `plot_score_distribution()` - Score histograms for normal/anomaly
+  - `compare_detectors()` - Side-by-side detector comparison
+  - `save_anomaly_overlay()` - Fast OpenCV-based overlay (no matplotlib)
+- **Example Scripts** (examples/) ⭐
+  - `quick_start.py` - Basic usage example
+  - `benchmark_example.py` - Multi-algorithm benchmarking
+  - `visualization_example.py` - Visualization demonstrations
+- **Expanded Test Suite** ⭐
+  - `test_evaluation.py` - 400+ lines testing all metrics
+  - `test_integration.py` - End-to-end workflow tests
+  - Synthetic dataset fixtures for testing
+  - Edge case and error handling tests
+- **Documentation**:
+  - `EVALUATION_AND_BENCHMARK.md` - Complete evaluation guide
 
 ### Changed
 - Enhanced package metadata and classifiers
 - Improved dependency version specifications
 - Updated development workflow documentation
+- Updated `__init__.py` to export new modules and functions
+- Version bump to 0.2.0
 
 ### Improved
 - Test configuration with coverage reporting
@@ -53,7 +152,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - SUOD (Scalable Unsupervised Outlier Detection)
   - XGBOD (XGBoost Outlier Detection)
 
-- Support for 12+ deep learning anomaly detectors:
+- Support for 15 deep learning anomaly detectors:
+  - **SimpleNet** (CVPR 2023) - Ultra-fast SOTA ⭐
+  - **PatchCore** (CVPR 2022) - Best accuracy ⭐
+  - **STFPM** (BMVC 2021) - Student-Teacher ⭐
   - AutoEncoder (AE)
   - AE + SVM
   - ALAD (Adversarial Learning)
