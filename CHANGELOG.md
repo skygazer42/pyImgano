@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **3 New High-Performance Deep Learning Algorithms** ⚡:
+  - **DRAEM** (ICCV 2021) - Discriminatively trained reconstruction with synthetic anomalies
+  - **CFlow-AD** (WACV 2022) - Real-time conditional normalizing flows
+  - **DFM** - Fast discriminative feature modeling (training-free)
+- Total algorithms now: **37+** (19 classical ML + 18 deep learning)
 - Enterprise-grade package configuration
 - Modern `pyproject.toml` build system configuration
 - Comprehensive GitHub Actions CI/CD workflows

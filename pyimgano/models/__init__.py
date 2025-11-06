@@ -27,43 +27,46 @@ _auto_import(
         # Classical ML algorithms
         "abod",
         "cblof",
-        "cof",  # NEW: Connectivity-based outlier factor
-        "copod",  # NEW: High-performance, parameter-free (ICDM 2020)
+        "cof",  # Connectivity-based outlier factor
+        "copod",  # High-performance, parameter-free (ICDM 2020)
         "dbscan",
-        "ecod",  # NEW: State-of-the-art, parameter-free (TKDE 2022)
-        "feature_bagging",  # NEW: Ensemble method
+        "ecod",  # State-of-the-art, parameter-free (TKDE 2022)
+        "feature_bagging",  # Ensemble method
         "hbos",
-        "inne",  # NEW: Isolation using nearest neighbors
+        "inne",  # Isolation using nearest neighbors
         "Isolationforest",
-        "knn",  # NEW: K-Nearest Neighbors (classic)
+        "knn",  # K-Nearest Neighbors (classic)
         "kpca",
         "k_means",
         "loci",
         "loda",
         "lof",
         "lscp",
-        "mcd",  # NEW: Minimum covariance determinant
+        "mcd",  # Minimum covariance determinant
         "ocsvm",
-        "pca",  # NEW: Principal Component Analysis (classic)
+        "pca",  # Principal Component Analysis (classic)
         "suod",
         "xgbod",
         # Deep learning algorithms
         "ae",
         "ae1svm",
         "alad",
+        "cflow",  # NEW: Conditional normalizing flows (WACV 2022) ⭐
         "deep_svdd",
+        "dfm",  # NEW: Fast discriminative feature modeling ⭐
+        "draem",  # NEW: Discriminative reconstruction (ICCV 2021) ⭐
         "efficientad",
         "fastflow",
         "imdd",
         "mo_gaal",
         "one_svm_cnn",
         "padim",
-        "patchcore",  # NEW: SOTA patch-level detection (CVPR 2022)
+        "patchcore",  # SOTA patch-level detection (CVPR 2022)
         "reverse_distillation",
-        "simplenet",  # NEW: Ultra-fast SOTA (CVPR 2023)
+        "simplenet",  # Ultra-fast SOTA (CVPR 2023)
         "ssim",
         "ssim_struct",
-        "stfpm",  # NEW: Student-Teacher matching (BMVC 2021)
+        "stfpm",  # Student-Teacher matching (BMVC 2021)
         "vae",
     ]
 )
