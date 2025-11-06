@@ -29,6 +29,7 @@ _auto_import(
         "cblof",
         "cof",  # Connectivity-based outlier factor
         "copod",  # High-performance, parameter-free (ICDM 2020)
+        "crossmad",  # NEW: Cross-Modal AD (CVPR 2025) ⭐⭐⭐⭐ 🚀
         "dbscan",
         "ecod",  # State-of-the-art, parameter-free (TKDE 2022)
         "feature_bagging",  # Ensemble method
@@ -52,6 +53,7 @@ _auto_import(
         "ae1svm",
         "alad",
         "ast",  # NEW: Anomaly-aware Student-Teacher (2023) ⭐⭐ 🆕
+        "bayesianpf",  # NEW: Bayesian Prompt Flow (CVPR 2025) ⭐⭐⭐⭐ 🚀
         "bgad",  # NEW: Background-guided detection (CVPR 2023) ⭐⭐ 🆕
         "cflow",  # NEW: Conditional normalizing flows (WACV 2022) ⭐
         "csflow",  # NEW: Cross-scale flows (WACV 2022) ⭐⭐ 🆕
@@ -73,7 +75,9 @@ _auto_import(
         "intra",  # NEW: Industrial Transformer (ICCV 2023) ⭐⭐ 🆕
         "memseg",  # NEW: Memory-guided segmentation ⭐⭐ 🆕
         "mo_gaal",
+        "oddoneout",  # NEW: Odd-One-Out (CVPR 2025) ⭐⭐⭐⭐ 🚀
         "one_svm_cnn",
+        "oneformore",  # NEW: Continual Diffusion (#1 MVTec/VisA, CVPR 2025) ⭐⭐⭐⭐⭐ 🚀
         "padim",
         "panda",  # NEW: Prototypical Anomaly Network (2023) ⭐⭐ 🆕
         "patchcore",  # SOTA patch-level detection (CVPR 2022)

@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A comprehensive, production-ready Python toolkit for visual anomaly detection, integrating **65+ state-of-the-art algorithms** from classical machine learning to cutting-edge deep learning (**CVPR 2024**, **ECCV 2024**, CVPR 2023, ICCV 2023, CVPR 2022, ECCV 2020). 🎉🔥
+A comprehensive, production-ready Python toolkit for visual anomaly detection, integrating **69+ state-of-the-art algorithms** from classical machine learning to cutting-edge deep learning (**CVPR 2025** 🚀, **CVPR 2024**, **ECCV 2024**, CVPR 2023, ICCV 2023, CVPR 2022, ECCV 2020). 🎉🔥
 
 > **Translations:** [中文](README_cn.md) · [日本語](README_ja.md) · [한국어](README_ko.md)
 
@@ -14,7 +14,7 @@ A comprehensive, production-ready Python toolkit for visual anomaly detection, i
 
 ## ✨ Key Features
 
-- 🔥 **65+ Detection Algorithms** 🎉🔥 - From classical (ECOD, COPOD, KNN, PCA) to latest 2024 SOTA (InCTRL, RealNet, PromptAD, GLAD, AST, DST, PANDA)
+- 🔥 **69+ Detection Algorithms** 🎉🔥🚀 - From classical (ECOD, COPOD, KNN, PCA) to latest **CVPR 2025** SOTA (One-for-More #1, BayesianPF, Odd-One-Out, CrossMAD)
 - 🚀 **Production Ready** - Enterprise-grade code quality, comprehensive testing, CI/CD pipelines
 - 📦 **Unified API** - Consistent interface across all algorithms with factory pattern
 - ⚡ **High Performance** - Top-tier algorithms (ECOD, COPOD) optimized for speed and accuracy
@@ -36,6 +36,10 @@ A comprehensive, production-ready Python toolkit for visual anomaly detection, i
 
 | Algorithm | Type | Year | Performance | Speed | Use Case |
 |-----------|------|------|-------------|-------|----------|
+| **One-for-More** ⭐ 🚀 | Deep Learning | 2025 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | #1 on MVTec/VisA, continual learning |
+| **BayesianPF** ⭐ 🚀 | Deep Learning | 2025 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Zero-shot Bayesian inference |
+| **Odd-One-Out** ⭐ 🚀 | Deep Learning | 2025 | ⭐⭐⭐⭐ | ⚡⚡⚡⚡ | Neighbor comparison, fast |
+| **CrossMAD** ⭐ 🚀 | Deep Learning | 2025 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Cross-modal harmonization |
 | **InCTRL** ⭐ 🔥 | Deep Learning | 2024 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | In-context learning, few-shot generalist |
 | **RealNet** ⭐ 🔥 | Deep Learning | 2024 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Feature selection, realistic synthesis |
 | **PromptAD** ⭐ 🔥 | Deep Learning | 2024 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Prompt learning, few-shot AD |
