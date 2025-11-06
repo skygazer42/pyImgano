@@ -51,6 +51,7 @@ _auto_import(
         "ae",
         "ae1svm",
         "alad",
+        "ast",  # NEW: Anomaly-aware Student-Teacher (2023) ⭐⭐ 🆕
         "bgad",  # NEW: Background-guided detection (CVPR 2023) ⭐⭐ 🆕
         "cflow",  # NEW: Conditional normalizing flows (WACV 2022) ⭐
         "csflow",  # NEW: Cross-scale flows (WACV 2022) ⭐⭐ 🆕
@@ -61,17 +62,22 @@ _auto_import(
         "differnet",  # NEW: Learnable difference detector (WACV 2023) ⭐⭐
         "draem",  # NEW: Discriminative reconstruction (ICCV 2021) ⭐
         "dsr",  # NEW: Deep spectral residual (WACV 2023) ⭐⭐ 🆕
+        "dst",  # NEW: Double Student-Teacher (2023) ⭐⭐ 🆕
         "efficientad",
         "fastflow",
+        "favae",  # NEW: Feature Adaptive VAE (2023) ⭐⭐ 🆕
+        "gcad",  # NEW: Graph Convolutional AD (2023) ⭐⭐ 🆕
         "imdd",
         "intra",  # NEW: Industrial Transformer (ICCV 2023) ⭐⭐ 🆕
         "memseg",  # NEW: Memory-guided segmentation ⭐⭐ 🆕
         "mo_gaal",
         "one_svm_cnn",
         "padim",
+        "panda",  # NEW: Prototypical Anomaly Network (2023) ⭐⭐ 🆕
         "patchcore",  # SOTA patch-level detection (CVPR 2022)
         "pni",  # NEW: Pyramidal normality indexing (CVPR 2022) ⭐⭐ 🆕
         "rdplusplus",  # NEW: Reverse Distillation++ (Enhanced) ⭐⭐ 🆕
+        "regad",  # NEW: Registration-based AD (2023) ⭐⭐ 🆕
         "reverse_distillation",
         "riad",  # NEW: Reconstruction from adjacent decomposition ⭐⭐ 🆕
         "simplenet",  # Ultra-fast SOTA (CVPR 2023)

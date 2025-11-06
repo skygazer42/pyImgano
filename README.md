@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A comprehensive, production-ready Python toolkit for visual anomaly detection, integrating **50+ state-of-the-art algorithms** from classical machine learning to cutting-edge deep learning (CVPR 2023, ICCV 2023, CVPR 2022, ECCV 2020, ICCV 2021, WACV 2023, KDD 2019). 🎉
+A comprehensive, production-ready Python toolkit for visual anomaly detection, integrating **60+ state-of-the-art algorithms** from classical machine learning to cutting-edge deep learning (CVPR 2023, ICCV 2023, CVPR 2022, ECCV 2020, ICCV 2021, WACV 2023, KDD 2019). 🎉
 
 > **Translations:** [中文](README_cn.md) · [日本語](README_ja.md) · [한국어](README_ko.md)
 
@@ -14,7 +14,7 @@ A comprehensive, production-ready Python toolkit for visual anomaly detection, i
 
 ## ✨ Key Features
 
-- 🔥 **50+ Detection Algorithms** 🎉 - From classical (ECOD, COPOD, KNN, PCA) to latest SOTA (InTra, RD++, BGAD, PNI, DSR, CSFlow)
+- 🔥 **60+ Detection Algorithms** 🎉 - From classical (ECOD, COPOD, KNN, PCA) to latest SOTA (AST, DST, PANDA, RegAD, GCAD, FAVAE, InTra, RD++, BGAD)
 - 🚀 **Production Ready** - Enterprise-grade code quality, comprehensive testing, CI/CD pipelines
 - 📦 **Unified API** - Consistent interface across all algorithms with factory pattern
 - ⚡ **High Performance** - Top-tier algorithms (ECOD, COPOD) optimized for speed and accuracy
@@ -36,15 +36,21 @@ A comprehensive, production-ready Python toolkit for visual anomaly detection, i
 
 | Algorithm | Type | Year | Performance | Speed | Use Case |
 |-----------|------|------|-------------|-------|----------|
-| **InTra** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Transformer-based, long-range |
+| **AST** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Anomaly-aware training, robust |
+| **DST** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Double student-teacher, complementary |
+| **PANDA** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Prototypical learning, metric-based |
+| **RegAD** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Registration-based, alignment |
+| **GCAD** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡ | Graph convolution, spatial relations |
+| **FAVAE** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Feature adaptive VAE, dynamic |
+| **InTra** ⭐ | Deep Learning | 2023 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Transformer-based, long-range |
 | **WinCLIP** ⭐ | Deep Learning | 2023 | ⭐⭐⭐⭐⭐ | ⚡⚡ | Zero-shot, no training needed |
 | **SimpleNet** ⭐ | Deep Learning | 2023 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡⚡ | Ultra-fast SOTA, production |
-| **BGAD** ⭐ 🆕 | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Background-guided, robust |
+| **BGAD** ⭐ | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Background-guided, robust |
 | **DifferNet** ⭐ | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Learnable differences, k-NN |
 | **DSR** ⭐ | Deep Learning | 2023 | ⭐⭐⭐⭐ | ⚡⚡⚡⚡ | Frequency domain, parameter-free |
 | **PatchCore** ⭐ | Deep Learning | 2022 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Best accuracy, MVTec champion |
 | **PNI** ⭐ | Deep Learning | 2022 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Multi-scale pyramid, fast |
-| **RD++** ⭐ 🆕 | Deep Learning | 2022 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Enhanced distillation, attention |
+| **RD++** ⭐ | Deep Learning | 2022 | ⭐⭐⭐⭐ | ⚡⚡⚡ | Enhanced distillation, attention |
 | **ECOD** | Classical | 2022 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Parameter-free, general purpose |
 | **COPOD** | Classical | 2020 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡⚡ | Speed-critical applications |
 | **SPADE** ⭐ | Deep Learning | 2020 | ⭐⭐⭐⭐⭐ | ⚡⚡⚡ | Excellent localization, k-NN |
