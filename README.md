@@ -81,7 +81,7 @@ pip install pyimgano
 ### Development Installation
 
 ```bash
-git clone https://github.com/jhlu2019/pyimgano.git
+git clone https://github.com/skygazer42/pyimgano.git
 cd pyimgano
 pip install -e .[dev]
 ```
